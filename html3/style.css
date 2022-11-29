@@ -33,12 +33,16 @@ html, body {
 }
 
 body {
-    margin-inline: 45px;
+    margin-inline: 150px;
 }
 
 *,
 *::after,*::before {
     box-sizing: border-box;
+}
+
+a {
+    color: #D6E4E8;
 }
 
 header {
@@ -47,30 +51,145 @@ header {
     background-image: url("../Pictures/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 15px;
-    padding-left: 20%;
+    padding-top: 36px;
+    padding-left: 140px;
 }
 
-header h1 {
-    margin-bottom:  px;
+nav {
+    margin-bottom: 25px;
 }
 
 .nav-list {
     display: flex;
     align-items: center;
     background: #333D3F;
+    padding-block: 18px;
 }
 
 .nav-list > * {
     display: inline-block;
+    flex-grow: 1;
 }
 
 .nav-list-item > a {
     display: block;
-    margin: 16px auto 16px auto;
+    text-align: center;
     font-size: 18px;
-    color: #D6E4E8;
     letter-spacing: 1.1px;
     text-transform: uppercase;
     border-right: 1px solid #D6E4E8;
+}
+
+.nav-list > .nav-list-item:last-child > a {
+    border-right: none;
+}
+
+.container {
+    display: flex;
+}
+
+.container h1 {
+    margin-bottom: 15px;
+}
+
+.container div, section {
+    margin-bottom: 25px;
+}
+
+aside {
+    margin-right: 35px;
+    width: 80%;
+}
+
+.main-menu {
+    margin-bottom: 15px;   
+}
+
+.main-menu a {
+    text-decoration: underline;
+}
+
+.main-bottom-container {
+    display: flex;
+}
+
+.main-bottom-container p {
+    margin-bottom: 15px;
+}
+
+.main-bottom-right {
+    border-left: 1px solid #D6E4E8;
+    padding-left: 10px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #D6E4E8;
+    color: #000;
+    padding: 12px 12px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form_element {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.form_element input {
+    margin-top: 5px;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+
+.half_form {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.left_half {
+    padding-right: 20px;
+}
+
+.half_form, .full_form {
+    margin-bottom: 15px;
+}
+
+.full_form {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+textarea {
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.radio-container p {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.submit_container > * {
+    display: block;
+    background: #D6E4E8;
+    color: #000;
+    font-size: 18px;
+    padding: 12px 12px;
+    text-align: right;
+    margin-inline: auto 0;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 20px;
 }
