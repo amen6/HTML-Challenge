@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Nexa-Bold";
+    src: URL('../fonts/Nexa_Bold.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa-Light";
+    src: URL('../fonts/Nexa_Light.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa-Black";
+    src: URL('../fonts/NexaBlack.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: URL('../fonts/NexaRegular.otf') format("truetype");
+}
+
+
+html * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Nexa";
+}
+
+html, body {
+    background: #212B2d;
+    color: #D6E4E8;
+}
+
+body {
+    margin-inline: 45px;
+}
+
+*,
+*::after,*::before {
+    box-sizing: border-box;
+}
+
+header {
+    height: 160px;
+    margin-block: 25px 10px; 
+    background-image: url("../Pictures/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15px;
+    padding-left: 20%;
+}
+
+header h1 {
+    margin-bottom:  px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    background: #333D3F;
+}
+
+.nav-list > * {
+    display: inline-block;
+}
+
+.nav-list-item > a {
+    display: block;
+    margin: 16px auto 16px auto;
+    font-size: 18px;
+    color: #D6E4E8;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    border-right: 1px solid #D6E4E8;
+}
